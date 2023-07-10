@@ -24,6 +24,11 @@ module.exports = {
   },
   plugins: ['react-refresh'],
   rules: {
+    "index": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-distracting-elements": [ 2, {
+      "elements": [ "marquee", "blink" ],
+    }],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },

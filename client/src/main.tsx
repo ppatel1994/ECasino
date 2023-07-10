@@ -7,11 +7,16 @@ import {
 import './index.css';
 // Pages
 import Login from './pages/Login';
+import Casino from './pages/Casino';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Login />,
+  },
+  {
+    path: '/casino',
+    element: <Casino />,
   },
 ]);
 
