@@ -1,5 +1,8 @@
 import React from 'react';
 import { ArrowDownRightIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import {
+  ViewColumnsIcon, BanknotesIcon, Cog6ToothIcon, ArrowLeftOnRectangleIcon,
+} from '@heroicons/react/24/solid';
 import Logo from './Logo';
 
 function Header() {
@@ -13,10 +16,42 @@ function Header() {
 
   return (
     <>
-      <div id="menu" className="hidden h-full w-full bg-ec-green z-10 fixed">
+      <div id="menu" className="hidden h-full w-full md:w-96 md:bg-ec-green-border md:right-0 bg-ec-green z-10 fixed">
         <div className="flex">
           <div role="presentation" onClick={closeMenu} className="ml-auto m-7 p-4 hover:rounded-full hover:bg-ec-green-border">
             <XMarkIcon className="animate-spin h-8 text-white cursor-pointer" />
+          </div>
+        </div>
+        <div className="flex flex-row hover:bg-ec-green-border md:hover:bg-ec-green mx-6 mb-6 rounded-lg space-x-10 space-y-3 cursor-pointer">
+          <div className="rounded-full bg-ec-green-border md:bg-ec-green p-3">
+            <ViewColumnsIcon className="text-white h-6" />
+          </div>
+          <div>
+            <p className="text-white text-lg">Leaderboard</p>
+          </div>
+        </div>
+        <div className="flex flex-row hover:bg-ec-green-border md:hover:bg-ec-green mx-6 mb-6 rounded-lg space-x-10 space-y-3 cursor-pointer">
+          <div className="rounded-full bg-ec-green-border md:bg-ec-green p-3">
+            <BanknotesIcon className="text-white h-6" />
+          </div>
+          <div>
+            <p className="text-white text-lg">Add Cash</p>
+          </div>
+        </div>
+        <div className="flex flex-row hover:bg-ec-green-border md:hover:bg-ec-green mx-6 mb-6 rounded-lg space-x-10 space-y-3 cursor-pointer">
+          <div className="rounded-full bg-ec-green-border md:bg-ec-green p-3">
+            <Cog6ToothIcon className="text-white h-6" />
+          </div>
+          <div>
+            <p className="text-white text-lg">Set up Drawing/Table</p>
+          </div>
+        </div>
+        <div className="flex flex-row hover:bg-ec-green-border md:hover:bg-ec-green mx-6 mb-6 rounded-lg space-x-10 space-y-3 cursor-pointer">
+          <div className="rounded-full bg-ec-green-border md:bg-ec-green p-3">
+            <ArrowLeftOnRectangleIcon className="text-white h-6" />
+          </div>
+          <div>
+            <p className="text-white text-lg">Logout</p>
           </div>
         </div>
       </div>
