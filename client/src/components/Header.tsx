@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowDownRightIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import {
   ViewColumnsIcon, BanknotesIcon, Cog6ToothIcon, ArrowLeftOnRectangleIcon,
 } from '@heroicons/react/24/solid';
 import Logo from './Logo';
+import AddCash from './AddCash';
 
 function Header() {
+  const [modal, setModal] = useState(false);
+
   const openMenu = () => {
     document.getElementById('menu').style.display = 'block';
   };
@@ -14,9 +17,19 @@ function Header() {
     document.getElementById('menu').style.display = 'none';
   };
 
+  const handleAddCashClick = () => {
+    closeMenu();
+    setModal(true);
+  };
+
+  const closeModal = () => {
+    setModal(false);
+  };
+
   return (
     <>
-      <div id="menu" className="hidden h-full w-full md:w-96 md:bg-ec-green-border md:right-0 bg-ec-green z-10 fixed">
+      {modal && <AddCash close={closeModal} /> }
+      <div id="menu" className="h-full w-full md:w-96 md:bg-ec-green-border md:right-0 bg-ec-green z-10 fixed">
         <div className="flex">
           <div role="presentation" onClick={closeMenu} className="ml-auto m-7 p-4 hover:rounded-full hover:bg-ec-green-border">
             <XMarkIcon className="animate-spin h-8 text-white cursor-pointer" />
@@ -30,12 +43,12 @@ function Header() {
             <p className="text-white text-lg">Leaderboard</p>
           </div>
         </div>
-        <div className="flex flex-row hover:bg-ec-green-border md:hover:bg-ec-green mx-6 mb-6 rounded-lg space-x-10 space-y-3 cursor-pointer">
+        <div data-modal-target="defaultModal" data-modal-toggle="defaultModal" onClick={handleAddCashClick} className="flex flex-row hover:bg-ec-green-border md:hover:bg-ec-green mx-6 mb-6 rounded-lg space-x-10 space-y-3 cursor-pointer">
           <div className="rounded-full bg-ec-green-border md:bg-ec-green p-3">
             <BanknotesIcon className="text-white h-6" />
           </div>
           <div>
-            <p className="text-white text-lg">Add Cash</p>
+            <p className="text-white text-lg">Manage Cash</p>
           </div>
         </div>
         <div className="flex flex-row hover:bg-ec-green-border md:hover:bg-ec-green mx-6 mb-6 rounded-lg space-x-10 space-y-3 cursor-pointer">

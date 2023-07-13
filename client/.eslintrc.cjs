@@ -24,6 +24,7 @@ module.exports = {
   },
   plugins: ['react-refresh'],
   rules: {
+    "react/prop-types": "off",
     "index": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-distracting-elements": [ 2, {
