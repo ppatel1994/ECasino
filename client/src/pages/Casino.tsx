@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 function Casino() {
   return (
-    <div className="bg-ec-green h-screen">
+    <div className="bg-ec-green h-screen w-full">
       <Header />
       <Banner />
       <Footer />

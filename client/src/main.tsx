@@ -8,6 +8,7 @@ import './index.css';
 // Pages
 import Login from './pages/Login';
 import Casino from './pages/Casino';
+import SetUp from './pages/SetUp';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: '/casino',
     element: <Casino />,
   },
+  {
+    path: '/setup',
+    element: <SetUp />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
