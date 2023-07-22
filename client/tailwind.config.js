@@ -15,7 +15,10 @@ export default {
         'ec-green-border' : '#142625',
         'ec-green-inner' : '#0B201E',
         'ec-green-footer' : '#142625',
-        'ec-light-grey' : '#9ca3af'
+        'ec-light-grey' : '#9ca3af',
+        'ec-bright-green' : '#06FA06',
+        'ec-cost-green' : '#9CCEC3',
+        'ec-fee-green' : '#568076'
       },
       animation: {
         'spin': 'spin 0.7s linear'

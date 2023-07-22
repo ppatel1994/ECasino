@@ -29,7 +29,7 @@ function RouletteForm() {
                 <input className="w-full border border-ec-green-footer text-sm p-2 bg-ec-green text-white focus:outline-none focus:ring focus:ring-ec-yellow" placeholder="Table Name" type="text" />
             </div>
             <div className="mx-4 my-12 ">
-                <button className="bg-ec-yellow text-white rounded-sm px-4 w-full py-4 hover:bg-ec-yellow-hover font-bold">Launch Table</button>
+                <button className="bg-ec-yellow text-white rounded-sm px-4 w-full py-4 hover:bg-ec-yellow-hover font-bold focus:ring focus:ring-ec-yellow">Launch Table</button>
             </div>
         </div>
     )

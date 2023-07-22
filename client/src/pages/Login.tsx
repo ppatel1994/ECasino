@@ -13,8 +13,8 @@ function Login() {
           <div className="flex-col-span-1">
             <Logo />
           </div>
-          <div className="flex col-span-1 content-center">
-            <button onClick={() => navigate('/casino')} type="button" className="text-sm md:text-lg text-white bg-ec-light-green px-4 rounded-lg focus:ring hover:bg-ec-yellow focus:ring-ec-light-green">Sign in with Google</button>
+          <div className="">
+            <button onClick={() => navigate('/casino')} type="button" className="text-xs md:text-lg p-4 text-white bg-ec-light-green w-100 rounded-lg focus:ring hover:bg-ec-yellow focus:ring-ec-light-green">Sign in with Google</button>
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ function DrawForm() {
                 <input className="w-full border border-ec-green-footer text-sm p-2 bg-ec-green text-white focus:outline-none focus:ring focus:ring-ec-yellow" placeholder="Drawing Name" type="text" />
             </div>
             <div className="mx-4 my-5">
-                <button className="bg-ec-yellow text-white rounded-sm px-4 w-full py-4 hover:bg-ec-yellow-hover font-bold">Launch Drawing</button>
+                <button className="bg-ec-yellow text-white rounded-sm px-4 w-full py-4 hover:bg-ec-yellow-hover font-bold focus:ring focus:ring-ec-yellow">Launch Drawing</button>
             </div>
         </div>
     )

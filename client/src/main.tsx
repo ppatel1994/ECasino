@@ -9,6 +9,7 @@ import './index.css';
 import Login from './pages/Login';
 import Casino from './pages/Casino';
 import SetUp from './pages/SetUp';
+import Drawing from './pages/Drawing';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: '/setup',
     element: <SetUp />
+  },
+  {
+    path: '/drawing/:drawId',
+    element: <Drawing />
   }
 ]);
 

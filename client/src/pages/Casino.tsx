@@ -8,7 +8,7 @@ function Casino() {
     <div className="bg-ec-green h-screen w-full">
       <Header />
       <Banner />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
